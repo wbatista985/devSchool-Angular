@@ -1,0 +1,23 @@
+<h1>{{title}}</h1>
+<h2>{{numberOne}}</h2>
+<h3>Data de Hoje {{dateToday}}</h3>
+<p>ano {{year}}</p>
+<p>preço {{price}}</p>
+
+<br><br> 
+
+<p>nome: {{client.nome}}</p>
+<p>sobrenome: {{client.sobrenome}}</p>
+<p>email: {{client.email}}</p>
+
+<br><br> 
+
+
+<div class="produtos" *ngFor="let item of products; index as i">
+     indice do objeto: {{i}}
+    <p>id: {{item.id}}</p>
+    <p>produtos: {{item.descricao}}</p>
+    <p>descrição: {{item.price}}</p>
+    <p>imagem : <img src="{{item.imageUrl}}"></p>
+    <hr><br>
+</div>
